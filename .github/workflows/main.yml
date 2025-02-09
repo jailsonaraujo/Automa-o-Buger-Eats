@@ -1,0 +1,22 @@
+name: Run Project
+
+on: [push]  # Executa o workflow a cada push no repositório
+
+jobs:
+  build:
+    runs-on: windows-latest  # Define o ambiente da máquina virtual
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar o Node.js (caso seja um projeto Node.js)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm install  # Altere para 'pip install -r requirements.txt' se for Python
+
+      - name: Rodar o projeto
+        run: npm start  # Altere conforme necessário (ex: python main.py)
