@@ -1,0 +1,21 @@
+{
+  "name": "testes",
+  "version": "1.0.0",
+  "description": "automação buger eats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jailson",
+  "license": "ISC",
+  "devDependencies": {
+    "@brazilian-utils/brazilian-utils": "^1.0.0-rc.12",
+    "@faker-js/faker": "^9.4.0",
+    "cypress": "^14.0.0",
+    "cypress-file-upload": "^5.0.8",
+    "gerador-validador-cpf": "^6.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

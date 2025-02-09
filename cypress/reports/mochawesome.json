@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-30T18:03:30.428Z",
+    "end": "2025-01-30T18:03:41.944Z",
+    "duration": 11516,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc274b2a-3f2f-4cae-9624-df03d0a7a670",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro.cy.js",
+      "file": "cypress\\e2e\\cadastro.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "abdb6561-a34e-4cf8-85fd-bcd0bfbcdb6d",
+          "title": "CADASTRO",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "d468eb21-7ac7-4cd1-82d0-83250c1d0ef5",
+              "title": "Realizar Cadastro",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Validar cadastro com sucesso para método de entrega com Moto",
+                  "fullTitle": "CADASTRO Realizar Cadastro Validar cadastro com sucesso para método de entrega com Moto",
+                  "timedOut": null,
+                  "duration": 4856,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.acessarTelaDeCadastro();\ncy.gerarDadosDeCadastro().then(dados => {\n  cy.dadosEntregador(dados.nome, dados.cpf, dados.email, dados.telefone);\n});\ncy.enderecoEntregador(this.dadosCadastro.endereco.cep, this.dadosCadastro.endereco.numero, this.dadosCadastro.endereco.complemento);\ncy.metodoDeEntrega(this.metodoRealizarEntrega.moto);\ncy.carregarFoto();\ncy.confirmarCadastro();\ncy.validaCadastroComSucesso();",
+                  "err": {},
+                  "uuid": "3d48ff9c-1f65-484a-a6f7-eeaea3c1e695",
+                  "parentUUID": "d468eb21-7ac7-4cd1-82d0-83250c1d0ef5",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validar cadastro com sucesso para método de entrega com Bicicleta",
+                  "fullTitle": "CADASTRO Realizar Cadastro Validar cadastro com sucesso para método de entrega com Bicicleta",
+                  "timedOut": null,
+                  "duration": 3282,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.acessarTelaDeCadastro();\ncy.gerarDadosDeCadastro().then(dados => {\n  cy.dadosEntregador(dados.nome, dados.cpf, dados.email, dados.telefone);\n});\ncy.enderecoEntregador(this.dadosCadastro.endereco.cep, this.dadosCadastro.endereco.numero, this.dadosCadastro.endereco.complemento);\ncy.metodoDeEntrega(this.metodoRealizarEntrega.bicicleta);\ncy.carregarFoto();\ncy.confirmarCadastro();\ncy.validaCadastroComSucesso();",
+                  "err": {},
+                  "uuid": "ddc5b682-c174-48f7-b85f-a323c4b4dcf4",
+                  "parentUUID": "d468eb21-7ac7-4cd1-82d0-83250c1d0ef5",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validar cadastro com sucesso para método de entrega com Van/Carro",
+                  "fullTitle": "CADASTRO Realizar Cadastro Validar cadastro com sucesso para método de entrega com Van/Carro",
+                  "timedOut": null,
+                  "duration": 3222,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.acessarTelaDeCadastro();\ncy.gerarDadosDeCadastro().then(dados => {\n  cy.dadosEntregador(dados.nome, dados.cpf, dados.email, dados.telefone);\n});\ncy.enderecoEntregador(this.dadosCadastro.endereco.cep, this.dadosCadastro.endereco.numero, this.dadosCadastro.endereco.complemento);\ncy.metodoDeEntrega(this.metodoRealizarEntrega.vanCarro);\ncy.carregarFoto();\ncy.confirmarCadastro();\ncy.validaCadastroComSucesso();",
+                  "err": {},
+                  "uuid": "42284e02-14df-4a37-9e41-4ef80495a20b",
+                  "parentUUID": "d468eb21-7ac7-4cd1-82d0-83250c1d0ef5",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3d48ff9c-1f65-484a-a6f7-eeaea3c1e695",
+                "ddc5b682-c174-48f7-b85f-a323c4b4dcf4",
+                "42284e02-14df-4a37-9e41-4ef80495a20b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 11360,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
